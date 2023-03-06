@@ -1,0 +1,42 @@
+2023-02-01 10:19:25,366 INFO o.a.j.u.JMeterUtils: Setting Locale to en_US
+2023-02-01 10:19:25,379 INFO o.a.j.JMeter: Loading user properties from: /Users/andrei.matveev/Documents/tools/apache-jmeter-5.5/bin/user.properties
+2023-02-01 10:19:25,380 INFO o.a.j.JMeter: Loading system properties from: /Users/andrei.matveev/Documents/tools/apache-jmeter-5.5/bin/system.properties
+2023-02-01 10:19:25,380 INFO o.a.j.JMeter: Setting System property: no_split_dataset_dir=./no-split-dataset/
+2023-02-01 10:19:25,380 INFO o.a.j.JMeter: Setting System property: split_dataset_dir=./split-dataset/
+2023-02-01 10:19:25,380 INFO o.a.j.JMeter: Setting Global properties from the file global.properties
+2023-02-01 10:19:25,383 INFO o.a.j.JMeter: Copyright (c) 1998-2022 The Apache Software Foundation
+2023-02-01 10:19:25,384 INFO o.a.j.JMeter: Version 5.5
+2023-02-01 10:19:25,384 INFO o.a.j.JMeter: java.version=17.0.2
+2023-02-01 10:19:25,384 INFO o.a.j.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+2023-02-01 10:19:25,384 INFO o.a.j.JMeter: os.name=Mac OS X
+2023-02-01 10:19:25,384 INFO o.a.j.JMeter: os.arch=aarch64
+2023-02-01 10:19:25,384 INFO o.a.j.JMeter: os.version=13.2
+2023-02-01 10:19:25,384 INFO o.a.j.JMeter: file.encoding=UTF-8
+2023-02-01 10:19:25,384 INFO o.a.j.JMeter: java.awt.headless=null
+2023-02-01 10:19:25,384 INFO o.a.j.JMeter: Max memory     =5368709120
+2023-02-01 10:19:25,384 INFO o.a.j.JMeter: Available Processors =8
+2023-02-01 10:19:25,388 INFO o.a.j.JMeter: Default Locale=English (United States)
+2023-02-01 10:19:25,388 INFO o.a.j.JMeter: JMeter  Locale=English (United States)
+2023-02-01 10:19:25,388 INFO o.a.j.JMeter: JMeterHome=/Users/andrei.matveev/Documents/tools/apache-jmeter-5.5
+2023-02-01 10:19:25,388 INFO o.a.j.JMeter: user.dir  =/Users/andrei.matveev/Documents/0-code/PT/master-branch-v2/jmeter-k8s/scenarios/dummy-gke-jmeter-tests/dummy-test-v1
+2023-02-01 10:19:25,388 INFO o.a.j.JMeter: PWD       =/Users/andrei.matveev/Documents/0-code/PT/master-branch-v2/jmeter-k8s/scenarios/dummy-gke-jmeter-tests/dummy-test-v1
+2023-02-01 10:19:25,397 INFO o.a.j.JMeter: IP: 192.168.1.248 Name: AMAC02GN28PQ05N FullName: amac02gn28pq05n.phub.net.cable.rogers.com
+2023-02-01 10:19:25,403 INFO o.a.j.JMeter: Loaded icon properties from org/apache/jmeter/images/icon.properties
+2023-02-01 10:19:25,722 INFO o.a.j.JMeterGuiLauncher: Setting LAF to: laf:com.apple.laf.AquaLookAndFeel
+2023-02-01 10:19:26,581 INFO o.j.r.JARSourceHTTP: Found cached repo
+2023-02-01 10:19:26,650 INFO o.j.r.PluginManager: Plugins Status: [jpgc-casutg=2.10, jpgc-dummy=0.4, jpgc-plugins-manager=1.8, bzm-random-csv=0.8, jpgc-tst=2.5, websocket-samplers=1.2.8, jmeter-core=5.5, jmeter-ftp=5.5, jmeter-http=5.5, jmeter-jdbc=5.5, jmeter-jms=5.5, jmeter-junit=5.5, jmeter-java=5.5, jmeter-ldap=5.5, jmeter-mail=5.5, jmeter-mongodb=5.5, jmeter-native=5.5, jmeter-tcp=5.5, jmeter-components=5.5]
+2023-02-01 10:19:27,756 INFO o.a.j.JMeterGuiLauncher: Loading file: dummy-test-v1.jmx
+2023-02-01 10:19:27,757 INFO o.a.j.s.FileServer: Default base='/Users/andrei.matveev/Documents/0-code/PT/master-branch-v2/jmeter-k8s/scenarios/dummy-gke-jmeter-tests/dummy-test-v1'
+2023-02-01 10:19:27,757 INFO o.a.j.s.FileServer: Set new base='/Users/andrei.matveev/Documents/0-code/PT/master-branch-v2/jmeter-k8s/scenarios/dummy-gke-jmeter-tests/dummy-test-v1'
+2023-02-01 10:19:27,898 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2023-02-01 10:19:27,903 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2023-02-01 10:19:27,904 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2023-02-01 10:19:27,906 INFO o.a.j.s.SaveService: Loading file: dummy-test-v1.jmx
+2023-02-01 10:19:27,988 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2023-02-01 10:19:27,988 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to ISO-8859-1
+2023-02-01 10:19:27,988 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2023-02-01 10:19:27,988 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2023-02-01 10:19:28,022 INFO o.a.j.s.FileServer: Set new base='/Users/andrei.matveev/Documents/0-code/PT/master-branch-v2/jmeter-k8s/scenarios/dummy-gke-jmeter-tests/dummy-test-v1'
+2023-02-01 10:19:28,150 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2023-02-01 10:19:28,150 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2023-02-01 10:19:28,258 INFO o.a.j.v.ViewResultsFullVisualizer: Add JavaFX to your Java installation if you want to use renderer: org.apache.jmeter.visualizers.RenderInBrowser

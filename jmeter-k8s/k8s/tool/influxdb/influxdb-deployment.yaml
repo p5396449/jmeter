@@ -1,0 +1,39 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: influxdb
+  name: influxdb
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: influxdb
+  template:
+    metadata:
+      labels:
+        app: influxdb
+    spec:
+      containers:
+        - envFrom:
+            - secretRef:
+                name: influxdb-creds
+          image: docker.io/influxdb:1.8.10
+          name: influxdb
+          resources:
+            requests:
+              memory: "2Gi"
+              cpu: "3"
+            limits:
+              memory: "3Gi"
+              cpu: "4"
+          volumeMounts:
+            - mountPath: /var/lib/influxdb
+              name: var-lib-influxdb
+      volumes:
+        - name: var-lib-influxdb
+          persistentVolumeClaim:
+            claimName: influxdb-pvc
+      nodeSelector:           
+        cloud.google.com/gke-nodepool: hammer-node-pool-non-preemptible          

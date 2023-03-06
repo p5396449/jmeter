@@ -1,0 +1,13 @@
+steps:
+ - name: gcr.io/cloud-builders/docker
+   id: Build
+   args: 
+    - 'build'
+    - '-t'
+    - '${_DOCKER_REGISTRY}/telus-pt-image:$TAG_NAME'
+    - 'jmeter-k8s/.'
+ - name: 'gcr.io/cloud-builders/docker'
+   id: Push
+   args:
+    - 'push'
+    - '${_DOCKER_REGISTRY}/telus-pt-image:$TAG_NAME'
