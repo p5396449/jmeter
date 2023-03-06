@@ -81,7 +81,8 @@ spec:
         - name: MODE
           value: "MASTER"        
         - name: JVM_ARGS                  
-          value: "-Xms12g -Xmx16g -XX:NewSize=4g -XX:MaxNewSize=6g"        
+          # value: "-Xms12g -Xmx16g -XX:NewSize=4g -XX:MaxNewSize=6g"
+          value: "-Xms256m -Xmx512m"
         - name: NODE_NAME
           valueFrom:
             fieldRef:
@@ -100,11 +101,15 @@ spec:
         - containerPort: 60000
         resources:
           requests:
-            memory: "16384Mi"
-            cpu: "12"
+            # memory: "16384Mi"
+            memory: "256Mi"
+            # cpu: "12"
+            cpu: "500m"
           limits:
-            memory: "20480Mi"
-            cpu: "14"
+            # memory: "20480Mi"
+            memory: "512Mi"
+            # cpu: "14"            
+            cpu: "700m"
         livenessProbe:
           exec:
             command:

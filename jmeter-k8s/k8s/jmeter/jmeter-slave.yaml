@@ -78,9 +78,9 @@ spec:
         - name: MODE
           value: "SLAVE"  
         - name: JVM_ARGS
-          value: "-Xms20g -Xmx24g"
-        - name: HEAP
-          value: "-XX:MaxMetaspaceSize=16g"
+          value: "-Xms256m -Xmx512m"
+        # - name: HEAP
+        #   value: "-XX:MaxMetaspaceSize=16g"
         command: ["/bin/bash"]
         args: ["-c", "trap 'exit 0' SIGUSR1 && while true; do sleep 30;done"]
         ports:
@@ -89,11 +89,15 @@ spec:
         - containerPort: 4445
         resources:
           requests:            
-            memory: "26Gi"  
-            cpu: "12" 
+            # memory: "26Gi"  
+            memory: "256Mi"  
+            # cpu: "12" 
+            cpu: "500m" 
           limits:            
-            memory: "30Gi"
-            cpu: "16"
+            # memory: "30Gi"
+            memory: "512Mi"
+            # cpu: "16"
+            cpu: "700m"
         livenessProbe:
           exec:
             command:

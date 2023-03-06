@@ -23,11 +23,15 @@ spec:
           name: influxdb
           resources:
             requests:
-              memory: "2Gi"
-              cpu: "3"
+              # memory: "2Gi"
+              memory: "256m"
+              # cpu: "3"
+              cpu: "500m"
             limits:
-              memory: "3Gi"
-              cpu: "4"
+              # memory: "3Gi"
+              memory: "512m"
+              # cpu: "4"
+              cpu: "700m"
           volumeMounts:
             - mountPath: /var/lib/influxdb
               name: var-lib-influxdb
