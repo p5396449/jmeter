@@ -251,7 +251,7 @@ copying_jmx_and_no_split_files_to_slave_pods()
       logit "INFO" "Copying \"${globalPropertiesFile}\" to master pod: ${master_pod}"
       kubectl cp -c jmmaster "${globalPropertiesFile}" -n "${namespace}" "${master_pod}:${jmeter_directory}/${GLOBAL_PROPERTIES_CONST}" &
     else 
-      kubectl rm -f -c jmmaster -n "${namespace}" "${master_pod}:${jmeter_directory}/${GLOBAL_PROPERTIES_CONST}" &
+      kubectl delete -f -c jmmaster -n "${namespace}" "${master_pod}:${jmeter_directory}/${GLOBAL_PROPERTIES_CONST}" &
       logit "WARN" "Starting with no \"${GLOBAL_PROPERTIES_CONST}\" file (not provided). Note that if default parameters are defined, they will be used! Existing on the pod \"${GLOBAL_PROPERTIES_CONST}\" file was removed!"
     fi
 
