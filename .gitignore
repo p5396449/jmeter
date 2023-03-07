@@ -1,2 +1,5 @@
 /.idea
 /git-pe-assets.iml
+/git-pe-assets-v1.iml
+/jmeter-k8s/scenarios/dummy-gke-jmeter-tests/dummy-test-v1/jmeter_injector_start.sh
+/jmeter-k8s/scenarios/dummy-gke-jmeter-tests/dummy-test-v1/load_test.sh

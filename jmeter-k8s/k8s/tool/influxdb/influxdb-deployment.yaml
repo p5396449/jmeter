@@ -22,15 +22,11 @@ spec:
           image: docker.io/influxdb:1.8.10
           name: influxdb
           resources:
-            requests:
-              # memory: "2Gi"
-              memory: "256m"
-              # cpu: "3"
+            requests:              
+              memory: "512Mi"              
               cpu: "500m"
-            limits:
-              # memory: "3Gi"
-              memory: "512m"
-              # cpu: "4"
+            limits:              
+              memory: "1Gi"              
               cpu: "700m"
           volumeMounts:
             - mountPath: /var/lib/influxdb
